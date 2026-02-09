@@ -1,0 +1,24 @@
+# Core Data Science
+pandas          # Data manipulation
+numpy           # Math
+matplotlib      # Basic plotting
+seaborn         # Statistical plotting
+
+# Machine Learning
+scikit-learn    # Base ML models (Random Forest, Logistic Regression)
+xgboost         # The industry standard for tabular credit data
+lightgbm        # Faster alternative to XGBoost
+catboost        # Great for categorical data (like 'Loan Grade')
+
+# Credit Risk Specifics
+imbalanced-learn # For SMOTE (handling rare fraud cases)
+shap             # Model Explainability (Why did we reject this user?)
+scorecardpy      # (Optional) For traditional credit scoring (WOE/IV)
+
+# Utils
+jupyter          # For notebooks
+joblib           # For saving models
+
+# Deployment / UI
+streamlit       # The app framework
+streamlit-lottie # (Optional) For cool animations
