@@ -1,0 +1,23 @@
+artifact_path: file:///d:/projects/CreditGuard/mlruns/models/m-5c0c781c642f4f3b9dab9ba48481de95/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.9.0
+model_id: m-5c0c781c642f4f3b9dab9ba48481de95
+model_size_bytes: 303889
+model_uuid: m-5c0c781c642f4f3b9dab9ba48481de95
+prompts: null
+run_id: 4429403df41a4de19e06da4d2be43e72
+utc_time_created: '2026-02-22 12:28:03.993613'
