@@ -22,7 +22,11 @@ The environment relies on the following core libraries:
 
 ## Data Source
 
-The dataset consists of historical loan records containing borrower financial history, credit line utilization, and loan characteristics (e.g., annual_inc, dti, open_acc, sub_grade, int_rate). The target variable is loan_status, which presents an 80/20 class imbalance between "Fully Paid" (majority) and "Charged Off" (minority) loans.
+The dataset is sourced from the Kaggle Lending Club Loan Data repository:
+
+- Lending Club Loan Data (loan.csv): https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv?select=loan.csv
+
+The dataset consists of historical loan records containing borrower financial history, credit line utilization, and loan characteristics (e.g., `annual_inc`, `dti`, `open_acc`, `sub_grade`, `int_rate`). The target variable is `loan_status`, which presents an approximately 80/20 class imbalance between **"Fully Paid"** (majority) and **"Charged Off"** (minority) loans.
 
 ---
 
