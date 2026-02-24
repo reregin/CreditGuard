@@ -30,13 +30,13 @@ The dataset consists of historical loan records containing borrower financial hi
 
 All model training, parameter logging, and artifact generation (such as feature importance plots) are strictly version-controlled using MLflow.
 
-| Experiment Number | Data Size | Modeling Strategy | Preprocessing Strategy | Accuracy | Precision | Recall | F1-Score | ROC-AUC | Key Metrics (Focus: Recall & PR-AUC) |
-|---|---|---|---|---|---|---|---|---|---|
-| **EXP_01** | (2436, 36) | Random Forest (Baseline Exploration) <br/> `class_weight='balanced'` | Structural cleaning. | 0.992 | 0.000 | 0.000 | 0.000 | 0.548 | 0 Recall (Majority Class Collapse) |
-| **EXP_02a** | (4994, 28) | Random Forest (Bagging) <br/> `class_weight='balanced'` | Target Encoding, Median Imputation + Missing Indicator, Standardizing missing values to `'unknown'`, Datetime adjustment, Ordinal preservation. | 0.722 | 0.321 | 0.350 | 0.335 | 0.641 | High Precision, Lower Recall |
-| **EXP_02b** | (4994, 28) | XGBoost (Boosting) <br/> `scale_pos_weight=4` | Same as **EXP_02a**. | 0.700 | 0.302 | 0.380 | 0.336 | 0.601 | Highest Recall, Lower Precision |
-| **EXP_02c** | (4994, 28) | LightGBM (Boosting) <br/> `scale_pos_weight=4` | Same as **EXP_02a**. | 0.684 | 0.280 | 0.370 | 0.319 | 0.592 | Moderate Recall, Moderate Precision |
-<!-- | **EXP_03** *(Planned)* | (4994, 28) | Meta-Ensemble (Hill-Climbing) | Same as **EXP_02a** + Out-of-Fold (OOF) prediction generation. | - | - | - | - | - | *Pending Execution* | -->
+| Exp. | Data Size | Modeling Strategy | Accuracy | Precision | Recall | F1-Score | ROC-AUC | Key Metrics (Focus: Recall & PR-AUC) |
+|---|---|---|---|---|---|---|---|---|
+| 01 | (2436,36) | Random Forest (Baseline Exploration) | 0.992 | 0.000 | 0.000 | 0.000 | 0.548 | 0 Recall (Majority Class Collapse) |
+| 02a | (4994,28) | Random Forest (Bagging) | 0.722 | 0.321 | 0.350 | 0.335 | 0.641 | High Precision, Lower Recall |
+| 02b | (4994,28) | XGBoost (Boosting) | 0.700 | 0.302 | 0.380 | 0.336 | 0.601 | Highest Recall, Lower Precision |
+| 02c | (4994,28) | LightGBM (Boosting) | 0.684 | 0.280 | 0.370 | 0.319 | 0.592 | Moderate Recall, Moderate Precision |
+<!-- | 03 *(Planned)* | (4994, 28) | Meta-Ensemble (Hill-Climbing) | - | - | - | - | - | *Pending Execution* | -->
 
 ---
 
